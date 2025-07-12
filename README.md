@@ -53,7 +53,7 @@ containerized-wordpress-with-mysql/
 
 Before starting, we inspect existing Docker volumes.
 
-📸 ![](screenshots/0_docker_volume_check_before_start.PNG)
+ ![](screenshots/0_docker_volume_check_before_start.PNG)
 
 ---
 
@@ -72,7 +72,7 @@ docker run -d \
   mysql:5.7
 ```
 
-📸 ![](screenshots/1_mysql_image_pull_and_run.png)
+ ![](screenshots/1_mysql_image_pull_and_run.png)
 
 ---
 
@@ -93,7 +93,7 @@ docker run -d \
   wordpress
 ```
 
-📸 ![](screenshots/2_wordpress_container_setup.png)
+ ![](screenshots/2_wordpress_container_setup.png)
 
 ---
 
@@ -101,7 +101,7 @@ docker run -d \
 
 Visit: [http://localhost:8080](http://localhost:8080)
 
-📸 ![](screenshots/3_wordpress_setup_wizard.png)
+ ![](screenshots/3_wordpress_setup_wizard.png)
 
 ---
 
@@ -109,8 +109,8 @@ Visit: [http://localhost:8080](http://localhost:8080)
 
 After setup, log in using your credentials.
 
-📸 ![](screenshots/4_wordpress_login.PNG)
-📸 ![](screenshots/5_wordpress_home_or_dashboard.png)
+ ![](screenshots/4_wordpress_login.PNG)
+ ![](screenshots/5_wordpress_home_or_dashboard.png)
 
 ---
 
@@ -118,7 +118,7 @@ After setup, log in using your credentials.
 
 Create a blog post to test data persistence.
 
-📸 ![](screenshots/9_blog_post_live.png)
+ ![](screenshots/9_blog_post_live.png)
 
 ---
 
@@ -130,8 +130,8 @@ docker rm -f wordpress wordpress-db
 
 Then recreate using the same commands or `docker-compose up -d`.
 
-📸 ![](screenshots/6_persistence_test_container_recreation.PNG)
-📸 ![](screenshots/7_containers_running_after_recreation.PNG)
+ ![](screenshots/6_persistence_test_container_recreation.PNG)
+ ![](screenshots/7_containers_running_after_recreation.PNG)
 
 ---
 
@@ -145,7 +145,7 @@ docker volume inspect db_data
 docker volume inspect wp_data
 ```
 
-📸 ![](screenshots/7_volume_inspection_and_final_persistence_check.png)
+ ![](screenshots/7_volume_inspection_and_final_persistence_check.png)
 
 ✅ You’ll notice all previous content remains intact.
 
